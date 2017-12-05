@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="#FFFFFF"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.bappy.shopmanagement.BuyProduct">
+
+<TextView
+    android:text="Buy Product"
+    android:layout_width="wrap_content"
+    android:textSize="25dp"
+    android:textColor="#000000"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/textView5" />
+
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="product name"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="quantity"
+        android:ems="10"
+        android:textSize="15dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/quantity"
+        android:gravity="center"
+        android:layout_below="@+id/pname"
+        android:layout_alignLeft="@+id/pname"
+        android:layout_alignStart="@+id/pname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="price"
+        android:textSize="15dp"
+        android:ems="10"
+        android:id="@+id/price"
+        android:gravity="center"
+        android:layout_below="@+id/quantity"
+        android:layout_alignLeft="@+id/quantity"
+        android:layout_alignStart="@+id/quantity" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="20dp"
+        android:text="save"
+        android:textSize="25dp" />
+
+</RelativeLayout>

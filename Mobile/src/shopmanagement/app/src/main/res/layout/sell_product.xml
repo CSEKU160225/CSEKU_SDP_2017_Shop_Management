@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bappy.shopmanagement.SellProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <TextView
+        android:text="Sell Product"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView5" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinneritem"
+        android:textAlignment="center"
+        android:gravity="center">
+    </Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="quantity"
+            android:id="@+id/quantity"
+            android:gravity="center"
+            android:layout_marginTop="34dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="price"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/price"
+            android:gravity="center"
+            android:layout_below="@+id/quantity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:text="Sell"
+            android:textSize="25dp"
+            android:layout_below="@+id/price"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

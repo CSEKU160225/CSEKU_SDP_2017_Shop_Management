@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#FFFFFF"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bappy.shopmanagement.product1">
+
+     <TextView
+        android:text="Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:id="@+id/textView4"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:background="#FFFFFF"
+        android:onClick="buyproduct"
+        android:text="Buy product"
+        android:textSize="35px" />
+
+    <Button
+        android:id="@+id/sell_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:onClick="sellproduct"
+        android:text="Sell Product"
+        android:textSize="34px"
+        android:layout_below="@+id/addproduct"
+        android:layout_alignEnd="@+id/addproduct"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:onClick="product"
+        android:text="product History"
+        android:textSize="32px"
+        android:layout_below="@+id/sell_btn"
+        android:layout_alignLeft="@+id/sell_btn"
+        android:layout_alignStart="@+id/sell_btn" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="#FFFFFF"
+        android:onClick="history"
+        android:text="Date History"
+        android:textSize="32px"
+        android:layout_below="@+id/product"
+        android:layout_alignStart="@+id/addproduct" />
+</RelativeLayout>
